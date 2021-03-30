@@ -1,0 +1,225 @@
+:root{
+    --almost-white: #f1f1f1;
+    --dark-gray:#242424;
+    --red-accent: #fd0144;
+}
+body{
+    margin: 0;
+    text-align: center;
+    font-family: 'noto sans';
+    color: var(--almost-white);
+    background: var(--dark-gray)
+}
+*{
+    box-sizing: border-box;
+}
+
+/* !!!!!!!!!!!!!!!!!!
+-------TYPOGRAPHY-------
+!!!!!!!!!!!!!!!!!!!!! */
+h1{
+    text-transform: capitalize;
+}
+.logo-title{
+    font-size: 30px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin: 0;
+    letter-spacing: 3px;
+}
+.logo-subtitle{
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+li{
+    margin: 0em 1em;
+    padding-bottom: 1.25em;
+    transition: .3s ease-in-out;
+    
+}
+.link-home{
+    border-bottom: 3px solid var(--red-accent)
+}
+
+li:hover,
+li:active{
+    border-bottom: 3px solid var(--red-accent)
+}
+.btn{
+    width: 200px;
+    font-family: inherit;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: .75em 1em;
+    margin: .5em 1em;
+    text-transform: capitalize;
+    color: var(--almost-white);
+    background:var(--red-accent);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+    opacity: 90%;
+    transition: .3s ease-in-out;
+}
+.btn:hover{
+    cursor: pointer;
+    transform: translateY(-5px);
+    opacity: 100%;
+}
+
+.btn-translucent{
+    background: gray;
+    color: white;
+    opacity: 50%;
+    transition: .3s ease-in-out;
+}
+
+.btn-translucent:hover{
+    background: var(--red-accent);
+    opacity: 100%;
+}
+
+.section-title{
+    width: 40%;
+    margin: 2em auto;
+    padding-bottom: .75em;
+    border-bottom: solid 3px var(--red-accent);
+}
+
+
+
+
+/* !!!!!!!!!!!!!!!!!!
+-------LAYOUT-------
+!!!!!!!!!!!!!!!!!!!!! */
+
+
+/* ------HERO------*/
+
+.pseudo-logo{
+   width: 250px;
+   margin: 2em auto;
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+}
+.hero{
+    background-image: url(assets/laptop-bg.png);
+    background-size: cover;
+
+}
+nav{
+    padding: 1em 0 0;
+}
+.home-container{
+    width: 90%;
+    margin: 4em auto;
+    padding: 0em 1em 3em 2em;
+}
+
+@media(min-width:1000px){
+    .btn{
+        margin: 1em 1em 1em 0;
+    }
+    nav{
+        max-width: 1500px;
+        margin: 0 auto;
+        padding: 1em 0 0; 
+        box-shadow: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2em 3em;
+        
+    }
+    .pseudo-logo{
+        text-align: left;
+        margin: 0;
+    }
+    .home-container{
+        text-align: left;
+        width: 75%;
+        max-width: 1300px;
+        margin: 0 auto;
+        padding: 5em 2em;
+    }
+}
+
+/*---- MY WORK---- */
+
+/* .my-work {
+    background: var(--almost-white);
+    text-align: center;    
+} */
+
+
+.portfolio-item {
+    overflow: hidden;
+}
+
+.portfolio-img {
+    width: 90%;
+    margin: 1em auto;
+    transition: 
+        transform 750ms cubic-bezier(.5, 0, .5, 1),
+        opacity 250ms linear;
+}
+
+.portfolio-item:focus {
+    position: relative;
+    z-index: 2;
+}
+
+.portfolio-img:hover,
+.portfolio-item:focus .portfolio-img {
+    transform: scale(1.2);
+    opacity: .5;
+}
+
+.portfolio-card{
+    width: 90%;
+    margin: 2em auto;
+    padding: 2em .5em;
+    background: rgba(99,99,99, 0.25);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+}
+.card-info{
+    padding: .75em 0 2em 0;
+}
+.card-info h4{
+    margin: 0 auto;
+}
+
+@media(min-width:1000px){
+    .portfolio{
+        display: flex;
+        justify-content: space-around;
+        /* flex-wrap: wrap; */
+        max-width: 1500px;
+        margin: 0 auto;
+        
+    }
+    .portfolio-img{
+        width: 60%;
+    }
+    .portfolio-card{
+        max-width: 500px;
+        margin: .5em 1em;
+    }
+}
