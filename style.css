@@ -99,6 +99,21 @@ li:active{
     padding-bottom: .75em;
     border-bottom: solid 3px var(--red-accent);
 }
+ 
+input, 
+textarea{
+    width: 18.75em;
+    padding: .75em 1em;
+    font-family: inherit;
+    border: solid lightgrey 2px;
+    outline: none;
+    margin: .75em 0;
+}
+
+input:focus, 
+textarea:focus{
+    border: 2px solid var(--red-accent);
+}
 
 
 
@@ -122,6 +137,8 @@ ul{
 .hero{
     background-image: url(assets/laptop-bg.png);
     background-size: cover;
+    height: 100vh;
+    max-height: 1200px;
 
 }
 nav{
@@ -209,8 +226,8 @@ nav{
 @media(min-width:1000px){
     .portfolio{
         display: flex;
-        justify-content: space-around;
-        /* flex-wrap: wrap; */
+        justify-content: center;
+        flex-wrap: wrap;
         max-width: 1500px;
         margin: 0 auto;
         
@@ -219,7 +236,9 @@ nav{
         width: 60%;
     }
     .portfolio-card{
-        max-width: 500px;
+        max-width: 350px;
         margin: .5em 1em;
     }
 }
+
+/*---- CONTACT FORM---- */
