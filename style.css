@@ -51,6 +51,8 @@ li{
     margin: 0em 1em;
     padding-bottom: 1.25em;
     transition: .3s ease-in-out;
+    cursor: pointer;
+    border-bottom: rgba(0, 0, 0, 0) 3px solid ;
     
 }
 .link-home{
@@ -73,6 +75,7 @@ li:active{
     text-transform: capitalize;
     color: var(--almost-white);
     background:var(--red-accent);
+    border-radius: 2px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
     opacity: 90%;
     transition: .3s ease-in-out;
@@ -84,9 +87,8 @@ li:active{
 }
 
 .btn-translucent{
-    background: gray;
-    color: white;
-    opacity: 50%;
+    background: rgba(99,99,99, 0.4);
+    color: var(--almost-white);
     transition: .3s ease-in-out;
 }
 
@@ -107,10 +109,15 @@ textarea{
     width: 18.75em;
     padding: .75em 1em;
     font-family: inherit;
-    border: solid lightgrey 2px;
+    background: rgba(99,99,99, 0);
+    color: var(--almost-white);
+    border-style: none;
+    border-bottom: solid var(--red-accent) 2px;
+    border-radius: 2px;
     outline: none;
     margin: .75em 0;
 }
+
 
 input:focus, 
 textarea:focus{
@@ -217,6 +224,7 @@ nav{
     margin: 2em auto;
     padding: 2em .5em;
     background: rgba(99,99,99, 0.25);
+    border-radius: 2px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
 }
 .card-info{
