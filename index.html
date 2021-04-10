@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>Hello Liana!</title>
 </head>
 <body>
     <div class="root">
-        <header class="hero">
+        <header class="hero" id="home">
             <div class="header">
             <nav>
                 <div class="pseudo-logo">
@@ -17,20 +17,20 @@
                     <p class="logo-subtitle">front-end web developer</p>
                 </div>
                     <ul>
-                        <li class="link-home"><a href="#">home</a></li>
-                        <li><a href="#">my work</a></li>
-                        <li><a href="#">contact</a></li>
+                        <li class="link-home"><a href="#home">home</a></li>
+                        <li><a href="#my-work">my work</a></li>
+                        <li><a href="#contact">contact</a></li>
                     </ul>
                 </nav>
                 <div class="home-container">
                     <h1>front-end web developer</h1>
                     <p class="home-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi et unde sunt at blanditiis. Molestias, vero repudiandae consequatur amet atque, deleniti voluptates obcaecati mollitia natus sunt est corrupti quam repellat.</p>
-                    <button class="btn" >I need a website</button>
-                    <button class="btn btn-translucent">I'm looking to hire</button>
+                    <button class="btn"> <a href="#contact">I need a website</a></button>
+                    <button class="btn btn-translucent"><a href="#contact">I'm looking to hire</a></button>
                 </div>
             </div>
         </header>
-        <section class="my-work">
+        <section class="my-work" id="my-work">
             <h1 class="section-title">my work</h1>
             <div class="portfolio">
                 <!-- project 1 -->
@@ -39,8 +39,12 @@
                         <img src="assets/domain-tracker-project.PNG" alt="" class="portfolio-img">
                     </a>
                     <div class="card-info">
-                        <h3>Project name</h3>
-                        <h4 class="btn">Github/code link</h4>
+                        <h4 class="btn">
+                            <a href="https://domain-name-tracker.netlify.app/" target="_blank">Domain Tracker</a>
+                        </h4>
+                        <h4 class="btn btn-translucent">
+                            <a href="https://github.com/lianamishkat/domain-name-tracker" target="_blank">Code</a>
+                        </h4>
                     </div>
                 </div>
                 <!-- project 2 -->
@@ -49,8 +53,12 @@
                         <img src="assets/todo-app.PNG" alt="" class="portfolio-img">
                     </a>
                     <div class="card-info">
-                        <h3>Project name</h3>
-                        <h4 class="btn">Github/code link</h4>
+                        <h4 class="btn">
+                            <a href="https://todo-app-with-react-liana.netlify.app/" target="_blank">ToDo App</a>
+                        </h4>
+                        <h4 class="btn btn-translucent">
+                            <a href="https://github.com/lianamishkat/todo-app" target="_blank">Code</a>
+                        </h4>
                     </div>
                 </div>
                 <!-- project 3 -->
@@ -59,8 +67,12 @@
                         <img src="assets/usbd-redesign.PNG" alt="" class="portfolio-img">
                     </a>
                     <div class="card-info">
-                        <h3>Project name</h3>
-                        <h4 class="btn">Github/code link</h4>
+                        <h4 class="btn">
+                            <a href="https://usbd-redesign.netlify.app/" target="_blank">USBD Re-Design</a>
+                        </h4>
+                        <h4 class="btn btn-translucent">
+                            <a href="https://github.com/lianamishkat/usbd-design" target="_blank">Code</a>
+                        </h4>
                     </div>
                 </div>
                 <!-- project 4 -->
@@ -69,8 +81,12 @@
                         <img src="assets/speed-typing-game.PNG" alt="" class="portfolio-img">
                     </a>
                     <div class="card-info">
-                        <h3>Project name</h3>
-                        <h4 class="btn">Github/code link</h4>
+                        <h4 class="btn">
+                            <a href="https://speed-typing-game-2021.netlify.app/" target="_blank">Speed Typing Game</a>
+                        </h4>
+                        <h4 class="btn btn-translucent">
+                            <a href="https://github.com/lianamishkat/speed-typing-game" target="_blank">Code</a>
+                        </h4>
                     </div>
                 </div>
                 <!-- project 5 -->
@@ -79,19 +95,27 @@
                         <img src="assets/random-user-generator.PNG" alt="" class="portfolio-img">
                     </a>
                     <div class="card-info">
-                        <h3>Project name</h3>
-                        <h4 class="btn">Github/code link</h4>
+                        <h4 class="btn">
+                            <a href="https://find-a-random-user.netlify.app/" target="_blank">Random User</a>
+                        </h4>
+                        <h4 class="btn btn-translucent">
+                            <a href="https://github.com/lianamishkat/random-user-generator" target="_blank">Code</a>
+                        </h4>
                     </div>
                 </div>
             </div>
         </section>
-        <section>
-            <form name="contact" method="POST" data-netlify="true"  class="contact-form">
-                <input type="text" name="name" placeholder="Name" required></br>
-                <input type="email" name="email" placeholder="Email" required></br>
-                <textarea required name="message" id="" cols="30" rows="10" placeholder="Message"></textarea></br>
-                <button class="btn" type="submit">Submit</button>
-            </form>
+        <section class="contact" id="contact">
+            <div class="contact-container">
+                <h1 class="section-title">Get in touch!</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, facilis labore! Minus, provident porro amet hic aperiam dolore alias sed. Tenetur voluptates, quia eum porro quo reprehenderit nulla earum sint.</p>
+                <form name="contact" method="POST" data-netlify="true"  class="contact-form">
+                    <input type="text" name="name" placeholder="Name" required></br>
+                    <input type="email" name="email" placeholder="Email" required></br>
+                    <textarea required name="message" id="" cols="30" rows="10" placeholder="Message"></textarea></br>
+                    <button class="btn" type="submit">Submit</button>
+                </form>
+            </div>
         </section>
     </div>  
 </body>

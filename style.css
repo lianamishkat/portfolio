@@ -2,13 +2,15 @@
     --almost-white: #f1f1f1;
     --dark-gray:#242424;
     --red-accent: #fd0144;
+    --lighter-gray: #616161;
 }
 body{
     margin: 0;
     text-align: center;
     font-family: 'noto sans';
     color: var(--almost-white);
-    background: var(--dark-gray)
+    background: var(--dark-gray);
+    scroll-behavior: smooth;
 }
 *{
     box-sizing: border-box;
@@ -18,7 +20,7 @@ body{
 -------TYPOGRAPHY-------
 !!!!!!!!!!!!!!!!!!!!! */
 h1{
-    text-transform: capitalize;
+    text-transform: uppercase;
 }
 .logo-title{
     font-size: 30px;
@@ -180,11 +182,12 @@ nav{
 
 /*---- MY WORK---- */
 
-/* .my-work {
-    background: var(--almost-white);
-    text-align: center;    
-} */
-
+.my-work {
+    padding: 3em 1em 5em 1em;
+}
+.portfolio{
+    padding: 1.5em .75em;
+}
 
 .portfolio-item {
     overflow: hidden;
@@ -220,7 +223,7 @@ nav{
     padding: .75em 0 2em 0;
 }
 .card-info h4{
-    margin: 0 auto;
+    margin: 1.5em auto 1em auto;
 }
 
 @media(min-width:1000px){
@@ -242,3 +245,13 @@ nav{
 }
 
 /*---- CONTACT FORM---- */
+
+.contact{
+    background: rgba(99,99,99, 0.25);
+    padding: 2em 1em 3em 1em;
+}
+.contact-container{
+    width: 75%;
+    max-width: 1300px;
+    margin: 0 auto;
+}
