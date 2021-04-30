@@ -106,8 +106,8 @@ li:active{
  
 input, 
 textarea{
-    width: 18.75em;
-    padding: .75em 1em;
+    width: 60%;
+    padding: .5em 0;
     font-family: inherit;
     background: rgba(99,99,99, 0);
     color: var(--almost-white);
@@ -117,6 +117,7 @@ textarea{
     outline: none;
     margin: .75em 0;
 }
+
 
 
 input:focus, 
@@ -255,11 +256,27 @@ nav{
 /*---- CONTACT FORM---- */
 
 .contact{
-    background: rgba(99,99,99, 0.25);
-    padding: 2em 1em 3em 1em;
+    background: rgba(0,0,0,.5);
+    padding: 3em 0;
 }
 .contact-container{
-    width: 75%;
-    max-width: 1300px;
+    border: 2px solid var(--red-accent);
+    background:rgba(99,99,99, 0.15);
+    width: 90%;
     margin: 0 auto;
+    padding: 1em;
+}
+@media(min-width:1000px){
+    .contact{    
+        padding: 2em 1em 3em 1em;
+    }
+    .contact-container{
+        width: 80%;
+        background-image: url(assets/contact.png);
+        background-size: cover;
+        max-width: 1300px;
+        margin: 0 auto;
+        padding: 3em;
+        border: none;
+    }
 }
